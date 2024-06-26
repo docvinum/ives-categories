@@ -35,7 +35,8 @@ if (isset($_POST['single_submit'])) {
 
 $args = array(
     'post_type' => 'post',
-    'posts_per_page' => -1
+    'posts_per_page' => -1,
+    'category_name' => 'ives-conference-series'
 );
 $all_posts = get_posts($args);
 
